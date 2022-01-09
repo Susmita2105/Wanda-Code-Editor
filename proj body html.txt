@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0175b47e25.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Online code editor</h1>
+    <div class="editor-menu">
+        <button class="btn btn-dark" id="icon"><i class="fas fa-moon"></i></i> Dark Mode</button>
+        <button class="btn btn-light" id="icon"><i class="fas fa-sun"></i> Light Mode</button>
+        <button class="btn btn-run"> <i class="fas fa-play"></i>  Run</button>
+        <div class="live">
+            <label for="live">Live-</label>
+            <input type="checkbox" name="" id="live">
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="editor" contenteditable="">
+                   Write your code here...
+            </div>
+        </div>
+           
+        <div class="bar" title="Click and Drag"></div>
+        
+        <div class="right">
+            <iframe src="" frameborder="0" class="iframe">
+               
+            </iframe> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <div class="footer">
+        Developed by: Team Web Waltzers (Ankita, Enakkhi, Nayonika, Susmita)
+        
+    </div>
+</body>
+
+
+</html>

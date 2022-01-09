@@ -1,0 +1,32 @@
+footer{
+    padding: auto;
+    background-color: #092a30;
+    /* padding: 5px 5px; */
+    
+    text-align: center;
+    color: rgb(241, 241, 241);
+}
+.copyright{
+    padding: 5px 5px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    margin: auto 5px;
+    color: #AEFEFF;
+    
+}
+a:hover{
+    color: white;
+    transition: 0.2s;
+}
+.github-logo{
+    font-size: 30px;
+}
+
+.bar{
+    width: 4px;
+    height: 100%;
+    background-color: rgb(241, 235, 235);
+    cursor:w-resize;
+}
