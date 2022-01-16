@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!--=====CSS=====-->
+        <link rel = "icon" href = 'logo.jpg' 
+        type = "image/x-icon">
+        <link rel="stylesheet" href="final_2.css">
+        <!--======box-icons======-->
+        <script src="https://kit.fontawesome.com/0175b47e25.js" crossorigin="anonymous"></script>    
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <!--Languages-->
+        <link rel="stylesheet" type="text/css" href="https://codemirror.net/lib/codemirror.css">
+        <script type="text/javascript" src="https://codemirror.net/lib/codemirror.js"></script>
+        <script type="text/javascript" src="https://codemirror.net/mode/xml/xml.js"></script>
+        <script type="text/javascript" src="https://codemirror.net/mode/css/css.js"></script>
+        <script type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script>
+
+
+
+        <title>Online Code Editor-Wanda</title>
+
+    </head>
+    <body>
+        <header>
+            <h1 class="project_name">{ONLINE CODE EDITOR}</h1>
+        </header>
+        <section class="header">
+
+                <div>
+                    <img src="logo.jpg" class="logo" height="60px" width="60px">
+                    <span class="team_name">Web Waltzers</span>
+                    <span class="team_description">~Coding made Easy</span>
+                    
+                    <!-- <a href="#" class="dark-mode_icon" id="icon"><i class="bx bxs-moon"></i> </a> -->
+                    <img src="mooon.jpg" id="icon">
+                    <!-- <i class='bx bxs-moon'></i> -->
+
+            </div>
+        </section>
+
+
+        <section>
+            <div class="actions">
+                <button id="run-btn">RUN</button>
+            </div>
+            <div class="editor">
+                <div class="code">
+                   <div class="html-code"><span class="details"><u>HTML</u></span><br><span class="lang">Write your html code here.......</span></div> 
+                   <div class="bar" title="Click and Drag"></div>
+
+                    <div class="css-code"><span class="details"><u>CSS</u></span><br><span class="lang">Write your css code here.......</span></div> 
+                    <div class="bar" title="Click and Drag"></div>
+
+                    <div class="js-code"><span class="details"><u>JS</u></span><br><span class="lang">Write your js code here.......</span></div>
+                </div></div>
+
+                <div class="demo">RESULT WINDOW:</div>
+
+                <div class="preview">
+                    <iframe id="preview-window"></iframe>
+                </div><br>
+            </div>
+        </section>
+
+
+
+
+
+
+        <footer>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="" class="github-logo"><i class="fab fa-github"></i></a>
+            <p class="copyright">© Web Waltzers 2022</p>
+        </footer>
+
+
+        <script src="https://kit.fontawesome.com/746da861bd.js" crossorigin="anonymous"></script>
+        <script>
+        const htmlEditor = CodeMirror(document.querySelector(".editor .code .html-code"),{
+         lineNumbers:true,
+         tabSize:4,
+         mode:"xml"
+        });
+        const cssEditor = CodeMirror(document.querySelector(".editor .code .css-code"),{
+         lineNumbers:true,
+         tabSize:4,
+         mode:"css"
+        });
+        const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"),{
+         lineNumbers:true,
+         tabSize:4,
+         mode:"javascript"
+        });
+
+        document.querySelector("#run-btn").addEventListener("click",function(){
+            let htmlCode = htmlEditor.getValue();
+            let cssCode = "<style>"+ cssEditor.getValue() + "</style>";
+            let jsCode = "<scri"+"pt>"+ jsEditor.getValue() + "</scri"+"pt>";
+            let previewWindow = document.querySelector("#preview-window").contentWindow.document;
+            previewWindow.open();
+            previewWindow.write(htmlCode+cssCode+jsCode);
+            previewWindow.close()
+        })
+
+        </script>
+        <script>
+            var icon= document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+
+                 if(document.body.classList.contains("dark-theme"))
+                     icon.src="sun.jpg";
+                else
+                    icon.src="mooon.jpg";
+                   
+            }
+           
+        //    var editor= CodeMirror.fromTextArea
+        //    (document.getElementById("icon"),{
+        //        mode:"xml",
+        //        theme:"dracula"
+        //    });
+          
+        </script>
+    </body>
+</html> 
