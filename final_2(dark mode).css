@@ -15,6 +15,7 @@
     --white:#f0f5f5;
     --footer-background:#092a30;
     --black:#000;
+    --back-color: white;
     /* background-color: red; */
 
      /* --first-color:#AEFEFF;
@@ -61,11 +62,12 @@
     --first-color:#AEFEFF;
     --first-color-dark:#4FBDBA;
     --text-color:#f0f5f5;
-    --first-color-light:#35858B;
+    --first-color-light:#1d595e;
     --first-color-lighten:#072227;
-    --white:#000; 
-    --footer-background:#bfe5ec; 
-    --black:#1de772;
+    --white:#273233;
+    --back-color: black; 
+    /* --footer-background:#bfe5ec;  */
+    /* --black:#1de772; */
 }
 
 @media screen and (min-width: 768px){
@@ -99,6 +101,7 @@ body{
 
     color: var(--text-color);
     line-height: 1.6;
+    background-color: var(--back-color);
 }
 
 h1,h2,h3{
@@ -203,10 +206,15 @@ h2,h3{
     transition: 0.2s;
 }
 
+
 .project_name{
-    background-color: var(--text-color);
-   color: var(--first-color-lighten);
-    text-align: center;
+    /* background-color: #000; */
+   /* color: #AEFEFF; */
+   font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 15px;
+    left: 40%;
 }
 
 /* .project_name:hover{
@@ -311,7 +319,7 @@ h2,h3{
     background-color: var(--footer-background);
     padding: 5px 0;
     text-align: center;
-    color: var(--white);
+    color: white;
 }
 .copyright{
     padding: 5px 0;
@@ -320,7 +328,7 @@ h2,h3{
 a{
     text-decoration: none;
     margin: auto 5px;
-    color: var(--first-color-lighten);
+    color: #AEFEFF;
 
 }
 a:hover{
@@ -342,6 +350,7 @@ a:hover{
     font-weight: bold;
     position: absolute;
     margin-top: 5px;
+    
 
 }
 
@@ -381,7 +390,7 @@ a:hover{
     width: 100%;
     height: 100%;
     display: flex;
-    border-bottom: 5px solid black ;
+    /* border-bottom: 5px solid black ; */
     
     /* text-align: center; */
 }
@@ -407,7 +416,7 @@ a:hover{
 
 .html-code{
     background-color:var(--first-color-light);
-    border: 5px solid var(--text-color);
+    border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
     height: 100%;
@@ -416,7 +425,7 @@ a:hover{
 }
 .css-code{
     background-color:var(--first-color-light);
-    border: 5px solid var(--text-color);
+    border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
     height: 100%;
@@ -424,7 +433,7 @@ a:hover{
 }
 .js-code{
     background-color:var(--first-color-light);
-    border: 5px solid var(--text-color);
+    border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
     height: 100%;
@@ -432,10 +441,10 @@ a:hover{
 }
 
 .preview{
-    border-top: 5px solid var(--black);
-    border-left: 5px solid var(--black);
-    border-right: 5px solid var(--black);
-    border-bottom: 5px solid var(--black);
+    border-top: 5px solid #273233;
+    border-left: 5px solid #273233;
+    border-right: 5px solid #273233;
+    border-bottom: 5px solid #273233;
     align-self: center;
     width: 100%;
      background-color: var(--white); 
@@ -459,7 +468,7 @@ a:hover{
 .demo{
     text-align: center;
     font-size:2rem;
-    color: black;
+    color: var(--text-color);
 }
 
 .lang{
@@ -471,9 +480,14 @@ a:hover{
     width: 4px;
      height: 100%; 
     background-color: var(--white);
-    cursor: w-resize; 
+    cursor: col-resize; 
 }
-
+.bar2{
+    width: 100%;
+     height: 4px; 
+    background-color: var(--white);
+    cursor: row-resize; 
+}
 #icon{
     float: right;
     height: 80px;
@@ -483,3 +497,9 @@ a:hover{
     border: 5px solid rgb(58, 23, 153);
 }
 
+u{
+    padding-left: 4px;
+}
+.lang{
+    padding-left: 4px;
+}
