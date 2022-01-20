@@ -592,10 +592,10 @@ u{
         
     }
 
-    .logo{
+   .logo{
         top: 5%;
-        height: 35px;
-        width: 35px;
+        height: 50px;
+        width: 50px;
     }
     .team_name{
         font-size: 1rem;
@@ -603,7 +603,7 @@ u{
     .team_description{
         font-size:1rem;
         margin-top:2rem;
-        margin-left:.1rem;
+        margin-left:1rem;
         position: absolute;
         left: 5rem;
     }
@@ -618,8 +618,8 @@ u{
     }
     #icon{
         float: right;
-        height: 5rem;
-        width: 5rem;
+        height: 4rem;
+        width: 4rem;
         margin: .5rem;
         border-radius: 4.5rem;
         border: .5rem solid rgb(58, 23, 153);
