@@ -392,6 +392,23 @@ a:hover{
     transition-duration: 0.3s;
 }
 
+.headersection{
+    width: 100%;
+    /* position: fixed; */
+    height: 7%;
+    /* border: 5px solid grey; */
+}
+
+.leftheadersection{
+    float: left;
+    padding: 10px;
+}
+
+.rightheadersection{
+    float: right;
+    padding: 3px;
+}
+
 .editor{
     width: 100%;
     height: 100%;
