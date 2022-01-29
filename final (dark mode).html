@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <!--=====CSS=====-->
-        <link rel = "icon" href = 'logo.jpg' 
-        type = "image/x-icon">
         <link rel="stylesheet" href="final(dark mode).css">
         <!--======box-icons======-->
         <script src="https://kit.fontawesome.com/0175b47e25.js" crossorigin="anonymous"></script>    
@@ -16,6 +14,8 @@
         <script type="text/javascript" src="https://codemirror.net/mode/xml/xml.js"></script>
         <script type="text/javascript" src="https://codemirror.net/mode/css/css.js"></script>
         <script type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 
 
@@ -40,63 +40,56 @@
 
             <!-- </div> -->
         </section>
-
-
-        <section>
-           <div class="actions">
-                <div class="leftheadersection">
-                    Enter project name : <input type="text" id="projectname" />
-                    &nbsp; &nbsp;
-                    <button onclick="saveProject()"><i class='bx bxs-save'></i> Save </button></div>
-                <!-- </div> --> &nbsp; &nbsp;
-                <button id="run-btn"><i class='bx bx-play'></i>RUN</button>
+        <div class="actions">
+            <div class="leftheadersection">
+                Enter project name : <input type="text" id="projectname" />
                 &nbsp; &nbsp;
-                <!-- <button id="live-btn"><i class='bx bx-play-circle' ></i>LIVE</button> -->
-                &nbsp; &nbsp;
-                <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i>Download</button>
-                &nbsp; &nbsp;
-                <!-- <button id="layout-btn"><i class='bx bxs-layout' ></i>Change Layout</button> -->
-                &nbsp; &nbsp;
-                <div class="rightheadersection">
-                    <select onchange= "populateEditor()" id="projects"></select>
-                </div>
-                
+                <button onclick="saveProject()"><i class='bx bxs-save'></i> Save </button></div>
+            <!-- </div> --> &nbsp; &nbsp;
+            <button id="run-btn"><i class='bx bx-play'></i>RUN</button>
+            &nbsp; &nbsp;
+            <!-- <button id="live-btn"><i class='bx bx-play-circle' ></i>LIVE</button> -->
+            &nbsp; &nbsp;
+            <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i>Download</button>
+            &nbsp; &nbsp;
+            <!-- <button id="layout-btn"><i class='bx bxs-layout' ></i>Change Layout</button> -->
+            &nbsp; &nbsp;
+            <div class="rightheadersection">
+                <select onchange= "populateEditor()" id="projects"></select>
             </div>
-            <div class="editor">
-                <div class="code">
-                   <div class="html-code"><span class="details"><u>HTML</u></span><br></div> 
-                   
+            
+        </div>
+        <div class="editor">
+            <div class="code">
+               <div class="html-code"><span class="details"><u>HTML</u></span><br></div> 
+               
 
-                    <div class="css-code"><span class="details"><u>CSS</u></span><br></div> 
-                    
-
-                    <div class="js-code"><span class="details"><u>JS</u></span><br></div>
-                </div></div>
+                <div class="css-code"><span class="details"><u>CSS</u></span><br></div> 
                 
 
-                
-                <div class="demo">RESULT WINDOW:</div>
+                <div class="js-code"><span class="details"><u>JS</u></span><br></div>
+            </div></div>
+            
 
-                <div class="preview">
-                    <iframe id="preview-window"></iframe>
-                </div><br>
+            
+            <div class="demo">RESULT WINDOW:</div>
+
+            <div class="preview">
+                <iframe id="preview-window"></iframe>
             </div>
-        </section>
-
-
-
-
-        <footer>
-            <a href="">About us</a>
-            <a href="contact.html">Contact us</a>
-            <a href="https://github.com/Susmita2105/Wanda-Code-Editor" class="github-logo"><i class="fab fa-github"></i></a>
-            <p class="copyright">© Web Waltzers 2022</p>
-        </footer>
-
+            
+        </div>
+        
 
         <script src="https://kit.fontawesome.com/746da861bd.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         
 
     </body>
+    <div class="footer">
+        <a class="footer-links" href="about-us.html">About us</a>
+        <a class="footer-links" href="contact.html">Contact us</a>
+        <a class="footer-links github-logo" href="https://github.com/Susmita2105/Wanda-Code-Editor"><i class="fab fa-github"></i></a>
+        <p class="copyright">© Web Waltzers 2022</p>
+    </div>
 </html> 
