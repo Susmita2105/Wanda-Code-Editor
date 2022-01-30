@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Lobster&display=swap');
 
 @media screen and (min-width: 768px){
     
@@ -28,10 +29,22 @@ h2,h3{
 }
 
 .header{
-    background-color:  #b9e0e4;
+    background-color:  #AEFEFF;
     overflow: hidden; 
-    font-family: cursive;
+    font-family: 'Balsamiq Sans',cursive;
 
+}
+.project_name{
+    /* background-color: #000; */
+   /* color: #AEFEFF; */
+   font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 15px;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    width: 500px;
 }
 
 .header_container{
@@ -100,7 +113,35 @@ h2,h3{
     color: #000;
     transition: 0.3s;
 }
+.footer{
+    background-color: #092a30;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+.footer-links{
+    margin: 0 10px;
+    font-family: 'Balsamiq Sans',cursive;
+    
+}
+.github-logo{
+    font-size: 25px;
+}
+.footer-links{
+    text-decoration: none;
+    color: #AEFEFF;
 
+}
+.footer-links:hover{
+    color: white;
+    transition: 0.2s;
+}
+.copyright{
+    padding: 5px 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 .contact
@@ -255,10 +296,6 @@ a:hover{
     transition: 0.2s;
 }
 
-.github-logo{
-    font-size: 30px;
-}
-
 .logo{
     height: 50px;
     width: 50px;
@@ -268,6 +305,7 @@ a:hover{
     margin-right: 10px;
 
 }
+
 .team_name{
     font-size: 2rem;
     font-weight: bold;
