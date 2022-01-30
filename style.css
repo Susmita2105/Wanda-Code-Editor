@@ -1,11 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  
-*
-{
-    margin: 0;  
-    padding: 0;  
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}  
+
+@media screen and (min-width: 768px){
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+    color: black;
+    line-height: 1.6;
+    background-color: var(--back-color);
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+h2,h3{
+    font-weight: 500;
+}
+
+.header{
+    background-color:  #b9e0e4;
+    overflow: hidden; 
+    font-family: cursive;
+
+}
+
+.header_container{
+    position: relative;
+
+}
+
+.header_data{
+
+    color: darkslategrey;
+    z-index: 10;
+    height: 60px;
+
+}
+
+.header_title{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    margin-top: 0.5rem;
+    margin-left: 15px;
+   padding: 1rem;
+
+}
+
+.header_title:hover{
+    font-size: 4rem;
+    transition: 0.3s;
+    color: #072227;
+}
+
+.tag_line{
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-left: 0rem;
+    margin-top: 5rem;
+
+}
+
+/* .tag_line:hover{
+    font-size: 2.5rem;
+    transition: 0.3s;
+} */
+.logo_img{
+    position: relative;
+   display: flex;
+    right: 0;
+    bottom: 0;
+    top:10px;
+    height: 70%;   
+
+}
+
+.header_icon{
+    font-size: 3rem;
+
+   margin-left: 1rem;
+}
+
+.header_tech-icon{
+    color: #35858B;
+    border:3px #000;
+}
+
+.header_tech-icon:hover{
+    /* font-size: 3.5rem; */
+    color: #000;
+    transition: 0.3s;
+}
+
+
+
 .contact
 {
     position: relative;  
@@ -22,6 +119,7 @@
 {
     max-width: 50rem;
     text-align: center;
+    font-family: cursive;
 }
 .contact .content h2
 {
@@ -134,7 +232,91 @@
     cursor: pointer;
     padding: 10px;
     font-size: 18px;  
-}     
+}      
+footer{
+    background-color: #143e46;
+    font-family: cursive;
+    padding: 5px 0;
+    text-align: center; 
+    color: white;
+}
+.copyright{
+    padding: 5px 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    margin: auto 5px;
+    color: #000000;
+
+}
+a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.github-logo{
+    font-size: 30px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.team_name{
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 5px;
+    
+
+}
+
+.team_description{
+    font-size:1rem;
+    margin-top:40px;
+    margin-left:5px;
+    position: absolute;
+    ;
+}  
+#icon{
+    float: right;
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 45px;
+    border: 5px solid rgb(58, 23, 153);
+}   
+
+.text{  
+   
+    width: 50%;  
+    font-family: cursive;
+}
+
+.options 
+{
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 2px;  
+    grid-auto-rows: minmax(30px,auto);
+    grid-auto-columns: minmax(30px,auto);
+    width: 100%; 
+    padding-top: 10px;
+} 
+
+.items{  
+    background-color: aqua;  
+    border: 1px black solid;  
+    border-radius: 1px; 
+    text-align: center;
+}
+
 @media( max-width:991px)  
 {  
     .contact  
