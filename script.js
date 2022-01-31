@@ -119,5 +119,18 @@ document.getElementById("jsEditor").innerText=obj.js;
         //    });
           
         
+function run(){
+            let htmlCode = htmlEditor.getValue();
+            let cssCode = "<style>"+ cssEditor.getValue() + "</style>";
+            let jsCode = "<scri"+"pt>"+ jsEditor.getValue() + "</scri"+"pt>";
+            let previewWindow = document.querySelector("#preview-window").contentWindow.document;
+            previewWindow.open();
+            previewWindow.write(htmlCode+cssCode+jsCode);
+            previewWindow.close()
+        }
+
+        document.querySelector(".editor .html-code").addEventListener("keyup",run);
+        document.querySelector(".editor .css-code").addEventListener("keyup",run);
+        document.querySelector(".editor .js-code").addEventListener("keyup",run);
 
         
