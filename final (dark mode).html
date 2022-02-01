@@ -16,7 +16,7 @@
         <script type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script>
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
 
         <title>Online  Editor-Wanda</title>
@@ -41,22 +41,23 @@
             <!-- </div> -->
         </section>
         <div class="actions">
-            <div class="leftheadersection">
+             <div class="leftheadersection">
                 Enter project name : <input type="text" id="projectname" />
-                &nbsp; &nbsp;
-                <button onclick="saveProject()"><i class='bx bxs-save'></i> Save </button></div>
-            <!-- </div> --> &nbsp; &nbsp;
-            <button id="run-btn"><i class='bx bx-play'></i>RUN</button>
-            &nbsp; &nbsp;
-            <!-- <button id="live-btn"><i class='bx bx-play-circle' ></i>LIVE</button> -->
-            &nbsp; &nbsp;
-            <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i>Download</button>
-            &nbsp; &nbsp;
-            <!-- <button id="layout-btn"><i class='bx bxs-layout' ></i>Change Layout</button> -->
-            &nbsp; &nbsp;
-            <div class="rightheadersection">
-                <select onchange= "populateEditor()" id="projects"></select>
+                
+                <button class="save-btn" onclick="saveProject()"><i class='bx bxs-save'></i> Save </button>
             </div>
+            <!-- </div> -->
+             <button id="run-btn"><i class='bx bx-play'></i>Run</button>
+            
+             <!-- <button id="live-btn"><i class='bx bx-play-circle' ></i>LIVE</button> -->
+             
+             <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i> Download</button>
+             
+             <!-- <button id="layout-btn"><i class='bx bxs-layout' ></i>Change Layout</button> -->
+             
+              <div class="rightheadersection">
+                <select onchange= "populateEditor()" id="projects"></select>
+              </div>
             
         </div>
         <div class="editor">

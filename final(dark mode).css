@@ -250,7 +250,7 @@ h2,h3{
     left: 35%;
     right: 35%;
     text-align: center;
-    width: 500px;
+    width: 450px;
 }
 
 /* .project_name:hover{
@@ -270,7 +270,7 @@ h2,h3{
     padding: 10px 10px 10px;
 }
 
-.btn_run{
+/* .btn_run{
     border: none;
     outline: none;
     cursor: pointer;
@@ -310,7 +310,7 @@ h2,h3{
     color: var(--text-color) ;
     font-weight: bolder;
 
-}
+} */
 
 
 .live{
@@ -413,19 +413,36 @@ a:hover{
 }
 
 .actions button{
-    padding: 10px 20px;
-    background: var(--white);
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 10%;
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #d9d9d9);
+    background-image: -moz-linear-gradient(top, #ffffff, #d9d9d9);
+    background-image: -ms-linear-gradient(top, #ffffff, #d9d9d9);
+    background-image: -o-linear-gradient(top, #ffffff, #d9d9d9);
+    background-image: linear-gradient(to bottom, #ffffff, #d9d9d9);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 7px 9px;
+    text-decoration: none;
     cursor: pointer;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.actions i{
+    font-size: 18px;
 }
 .actions button:hover{
-    background-color:var(--text-color);
-    color: var(--first-color-lighten);
-    transition-duration: 0.3s;
+    background: #e6e9eb;
+  background-image: -webkit-linear-gradient(top, #e6e9eb, #bababa);
+  background-image: -moz-linear-gradient(top, #e6e9eb, #bababa);
+  background-image: -ms-linear-gradient(top, #e6e9eb, #bababa);
+  background-image: -o-linear-gradient(top, #e6e9eb, #bababa);
+  background-image: linear-gradient(to bottom, #e6e9eb, #bababa);
+  text-decoration: none;
 }
 
 .headersection{
@@ -437,7 +454,10 @@ a:hover{
 
 .leftheadersection{
     float: left;
-    padding: 10px;
+    padding: 10px 0;
+}
+.save-btn{
+    margin-left:10px;
 }
 
 .rightheadersection{
@@ -676,8 +696,9 @@ u{
     }
     .project_name{
         font-size: 15px;
-        left: 10%;
-        right: 10%;
+        left: 23%;
+        right: 23%;
+        width:190px;
         text-align: center;
     }
     .demo{
@@ -694,6 +715,25 @@ u{
     }
     .copyright{
         font-size: 10px;
+    }
+    .leftheadersection{
+        display: none;
+    }
+    .rightheadersection{
+        display: none;
+    }
+    .actions button{
+        font-size: 12px;
+        padding: 5px 7px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .actions i{
+        font-size: 13px;
     }
    
 }
@@ -728,12 +768,34 @@ u{
     .project_name{
         font-size: 20px;
         left:35%;
+        width:250px;
     }
     .demo{
         font-size: 20px;
     }
     u{
         font-size: 20px;
+    }
+    
+    .actions button{
+        font-size: 12px;
+        padding: 5px 7px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .actions i{
+        font-size: 13px;
+    }
+    .leftheadersection{
+        padding: 0 3px;
+     font-size: 15px;   
+    }
+    .save-btn{
+        margin:0 8px;
     }
  
 }
