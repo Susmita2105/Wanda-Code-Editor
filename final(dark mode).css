@@ -71,7 +71,7 @@
     /* --black:#1de772; */
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 816px){
     :root{
         --biggest-font-size: 3rem;
         --h1-font-size: 2.5rem;
@@ -151,7 +151,7 @@ h2,h3{
 
 .header{
     background-color: var(--first-color-lighten);
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -744,9 +744,9 @@ u{
     .copyright{
         font-size: 10px;
     }
-    /* .leftheadersection{
+    .leftheadersection{
         display: none;
-    } */
+    }
     /* .rightheadersection{
         display: none;
     } */
@@ -759,9 +759,20 @@ u{
         text-align: center;
         vertical-align: middle;
         margin-right: 10px;
+        margin-top: 4px;
     }
     .actions i{
         font-size: 13px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .content{
+        width: auto;
+        margin: 50px 30px;
     }
    
 }
@@ -818,12 +829,29 @@ u{
     .actions i{
         font-size: 13px;
     }
-    .leftheadersection{
+    .rightheadersection{
+        margin-top: 8px;
+    }
+    /* .leftheadersection{
         padding: 0 3px;
      font-size: 15px;   
     }
     .save-btn{
         margin:0 8px;
+    } */
+    .leftheadersection{
+     font-size: 15px; 
+     padding-left: 10px;
+     margin-top: 4px; 
+
     }
+    .content{
+        width: auto;
+        margin: 50px 80px;
+    }
+    h1{
+        font-size: 20px;
+    }
+   
  
 }

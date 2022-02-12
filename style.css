@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Lobster&display=swap');
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 815px){
     
 }
 
@@ -11,7 +11,7 @@ html{
 
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: medium;
     font-weight: 500;
 
@@ -30,7 +30,7 @@ h2,h3{
 
 .header{
     background-color:  #AEFEFF;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     font-family: 'Balsamiq Sans',cursive;
 
 }
@@ -150,7 +150,7 @@ h2,h3{
 {
     position: relative;  
     min-height: 100vh;  
-    padding: 4rem 8rem;  
+    padding: 2rem 7rem;  
     display: flex;  
     justify-content: center; 
     align-items: center;  
@@ -162,7 +162,9 @@ h2,h3{
 {
     max-width: 50rem;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 .contact .content h2
 {
@@ -179,7 +181,7 @@ h2,h3{
 {  
     width: 100%;  
     display: flex;  
-    justify-content: center;  
+    justify-content: left;  
     align-items: center;  
     margin-top: 30px;
 } 
@@ -225,6 +227,7 @@ h2,h3{
     width: 40%;  
     padding: 40px;
     background: #fff;
+    /* display: none; */
 } 
 .contactForm h2
 {  
@@ -338,7 +341,8 @@ a:hover{
 .text{  
    
     width: 50%;  
-    font-family: cursive;
+    font-family:'Lato', sans-serif;
+    font-weight: 200;
 }
 
 .options 
@@ -357,6 +361,11 @@ a:hover{
     border: 1px black solid;  
     border-radius: 1px; 
     text-align: center;
+    margin: 0 3px;
+    width: 80px;
+}
+.items a:hover{
+color: black;
 }
 
 @media( max-width:991px)  
@@ -373,4 +382,116 @@ a:hover{
     {  
         width: 100%;
     }
+    .contactForm{
+        width:80%;
+    }
 }
+
+
+
+@media screen and (min-width:501px) and (max-width:815px){
+    
+    .logo{
+        height: 40px;
+        width: 40px;
+        margin-left: 2px;
+    }
+    
+    .team_name{
+        font-size: 20px;
+        margin-top:10px;
+        
+    }
+    .team_description{
+        font-size:12px;
+        margin-top:30px;
+        position: absolute;
+        margin-left: 0;
+        
+    }
+    .project_name{
+        font-size: 20px;
+        left:35%;
+        width:250px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:500px){
+   
+   .header{
+       width: auto;
+   }
+   
+
+   .logo{
+       height: 40px;
+       width: 40px;
+       margin-left: 2px;
+   }
+   #icon{
+       float: right;
+       height: 40px;
+       width: 40px;
+       border:4px solid rgb(58, 23, 153);
+       margin-right: 2px;
+   
+   }
+   .team_name{
+     
+       display: none;
+       
+   }
+   .team_description{
+       
+       display: none;
+
+   }
+   .project_name{
+       font-size: 15px;
+       left: 23%;
+       right: 23%;
+       width:190px;
+       text-align: center;
+   }
+   
+   a{
+       font-size: 10px;
+   }
+   .github-logo{
+       font-size: 20px;
+   }
+   .copyright{
+       font-size: 10px;
+   }
+   h1{
+    font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .Number{
+        font-size: 15px;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+
+  
+}
+
