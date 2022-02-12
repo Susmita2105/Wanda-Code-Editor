@@ -458,13 +458,26 @@ a:hover{
 .leftheadersection{
     float: left;
     padding: 10px 0;
+    /* display: none; */
+    justify-content: left;
+    padding-right: 30px;
+    color:white;
+    font-size:1.3rem;
 }
 .save-btn{
     margin-left:10px;
+    
+}
+
+.run-btn{
+    align-items:right ;
 }
 
 .rightheadersection{
-    float: right;
+    /* float: right; */
+    text-align: right;
+    justify-content: right;
+    /* display:none; */
     padding: 3px;
 }
 

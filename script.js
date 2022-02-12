@@ -83,7 +83,7 @@ const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"),{
                if(document.body.classList.contains("dark-theme"))
                    icon.src="sun.jpg";
               else
-                  icon.src="moon.jpg";
+                  icon.src="mooon.jpg";
                  
           }
 
