@@ -37,14 +37,15 @@ h2,h3{
 .project_name{
     /* background-color: #000; */
    /* color: #AEFEFF; */
-   font-size: 2rem;
-    font-weight: bold;
+   font-size: 2.5rem;
+    /* font-weight: bold; */
     position: absolute;
-    margin-top: 15px;
+    margin-top: 10px;
     left: 35%;
     right: 35%;
     text-align: center;
-    width: 500px;
+    width: 450px;
+    font-family: 'Secular One', sans-serif;
 }
 
 .header_container{
@@ -115,14 +116,15 @@ h2,h3{
 }
 .footer{
     background-color: #092a30;
-    padding: 5px 0;
+    font-family:'Inter', sans-serif;
+    padding-bottom: 5px;
     text-align: center;
     color: white;
 }
 .footer-links{
     margin: 0 10px;
-    font-family: 'Balsamiq Sans',cursive;
-    
+    /* font-family: 'Balsamiq Sans',cursive;
+     */
 }
 .github-logo{
     font-size: 25px;
@@ -274,13 +276,13 @@ h2,h3{
     padding: 10px;
     font-size: 18px;  
 }      
-footer{
+/* .footer{
     background-color: #143e46;
-    font-family: cursive;
-    padding: 5px 0;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 5px;
     text-align: center; 
     color: white;
-}
+} */
 .copyright{
     padding: 5px 0;
     margin: 0;
@@ -311,6 +313,7 @@ a:hover{
     font-weight: bold;
     position: absolute;
     margin-top: 5px;
+    font-family: 'Playfair Display', serif;
     
 
 }
@@ -320,8 +323,9 @@ a:hover{
     margin-top:40px;
     margin-left:5px;
     position: absolute;
-    ;
-}  
+    font-family: 'Playfair Display', serif;
+    
+}
 #icon{
     float: right;
     height: 60px;

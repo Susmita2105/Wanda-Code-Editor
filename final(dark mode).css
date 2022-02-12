@@ -28,7 +28,7 @@
     --footer-background:#bfe5ec;  */
 
     /*====font and typography====*/
-    --body-font:'Balsamiq Sans', cursive;
+    --body-font:'Inter', sans-serif;
     --header-font:'Lobster', cursive;
     --biggest-font-size: 2.5rem;
     --h1-font-size:1.5rem;
@@ -243,14 +243,15 @@ h2,h3{
 .project_name{
     /* background-color: #000; */
    /* color: #AEFEFF; */
-   font-size: 2rem;
-    font-weight: bold;
+   font-size: 2.5rem;
+    /* font-weight: bold; */
     position: absolute;
-    margin-top: 15px;
+    margin-top: 10px;
     left: 35%;
     right: 35%;
     text-align: center;
     width: 450px;
+    font-family: 'Secular One', sans-serif;
 }
 
 /* .project_name:hover{
@@ -353,7 +354,7 @@ h2,h3{
 
   .footer{
     background-color: var(--footer-background);
-    padding: 5px 0;
+    padding-bottom: 5px;
     text-align: center;
     color: white;
 }
@@ -391,6 +392,7 @@ a:hover{
     font-weight: bold;
     position: absolute;
     margin-top: 5px;
+    font-family: 'Playfair Display', serif;
     
 
 }
@@ -400,7 +402,8 @@ a:hover{
     margin-top:40px;
     margin-left:5px;
     position: absolute;
-    ;
+    font-family: 'Playfair Display', serif;
+    
 }
 
 .actions{
@@ -542,6 +545,7 @@ a:hover{
 
 .details{
     font-size: 1.6rem;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
     font-weight: bold;
    
 }
@@ -550,6 +554,8 @@ a:hover{
     text-align: center;
     font-size:2rem;
     color: var(--text-color);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
 }
 
 .lang{
@@ -665,11 +671,11 @@ u{
         width: auto;
     }
     
-    .preview {
+    /* .preview {
         width:auto;
         
         
-    }
+    } */
 
     .logo{
         height: 40px;
