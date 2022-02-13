@@ -48,7 +48,7 @@ const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"),{
          })
 
          function download(){
-            var filename = prompt("Enter file name: ");
+            var filename = prompt("Enter file name(with extension like .html or .htm or .txt) : ");
             if(filename.trim() == "" || filename == null){
                 alert("Project name cannot be blank.");
                 return;}
