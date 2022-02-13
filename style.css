@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Lobster&display=swap');
 
 @media screen and (min-width: 815px){
-    
+
 }
 
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
@@ -364,15 +365,15 @@ a:hover{
 } 
 
 .items{  
-    background-color: aqua;  
+    background-color: rgb(11, 181, 224);  
     border: 1px black solid;  
-    border-radius: 1px; 
+    border-radius: 10px; 
     text-align: center;
     margin: 0 3px;
     width: 80px;
 }
 .items a:hover{
-color: black;
+color: rgb(255, 255, 255);
 }
 
 @media( max-width:991px)  
@@ -381,10 +382,11 @@ color: black;
     {  
         padding: 50px;
     }  
-    .container  
+    .container .contactInfo 
     {  
+        display: flex;
         flex-direction: column;
-    }  
+    }    
     .container .contactInfo, .contactForm  
     {  
         width: 100%;
@@ -497,6 +499,9 @@ color: black;
     .icon{
         height: 20px;
         width: 20px;
+    }
+    .items{
+        width: 45px;
     }
 
   
