@@ -42,9 +42,9 @@ let editorLib ={
 
 
     //theme
-    codeEditor.setTheme("ace/theme/dracula");
-    codeEditor2.setTheme("ace/theme/dracula");
-    codeEditor3.setTheme("ace/theme/dracula");
+    codeEditor.setTheme("ace/theme/katzenmilch");
+    codeEditor2.setTheme("ace/theme/katzenmilch");
+    codeEditor3.setTheme("ace/theme/katzenmilch");
     
 
     //set language
@@ -162,6 +162,30 @@ html+="<option>" +localStorage.key(i)+"</option>";
                a.download=filename;
               a.click();
         }
+
+
+        // dark mode
+        var icon= document.getElementById("icon");
+
+          icon.onclick = function(){
+              document.body.classList.toggle("dark-theme");
+
+               if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.jpg";
+                codeEditor.setTheme("ace/theme/merbivore_soft");
+                codeEditor2.setTheme("ace/theme/merbivore_soft");
+                codeEditor3.setTheme("ace/theme/merbivore_soft");
+               }
+                   
+              else{
+                icon.src="mooon.jpg";
+                codeEditor.setTheme("ace/theme/katzenmilch");
+                codeEditor2.setTheme("ace/theme/katzenmilch");
+                codeEditor3.setTheme("ace/theme/katzenmilch");
+              }
+                 
+                 
+          }
 
 
 

@@ -522,7 +522,7 @@ a:hover{
 }
 
 .html-code{
-    background-color:var(--first-color-light);
+    /* background-color:var(--first-color-light); */
     border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
@@ -532,7 +532,7 @@ a:hover{
   
 }
 .css-code{
-    background-color:var(--first-color-light);
+    /* background-color:var(--first-color-light); */
     border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
@@ -540,7 +540,7 @@ a:hover{
   width: 32%;
 }
 .js-code{
-    background-color:var(--first-color-light);
+    /* background-color:var(--first-color-light); */
     border: 5px solid #273233;
     border-radius: 2%;
     margin: 5px;
