@@ -516,6 +516,7 @@ a:hover{
   display: flex;
   justify-content: center;
   flex-direction: row;
+  height: 25rem;
   /* padding: .5rem; */
   
 }
@@ -526,7 +527,8 @@ a:hover{
     border-radius: 2%;
     margin: 5px;
     height: 97%;
-  width: 33%;
+   width: 33%;
+   position: relative;
   
 }
 .css-code{

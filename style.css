@@ -9,6 +9,9 @@ html{
     scroll-behavior: smooth;
 
 }
+textarea{
+    display: flex;
+}
 
 body{
     margin: 0;
