@@ -1,121 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <!--=====CSS=====-->
-        <link rel = "icon" href = 'logo.jpg' 
-        type = "image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <!--======box-icons======-->
-        <script src="https://kit.fontawesome.com/0175b47e25.js" crossorigin="anonymous"></script>    
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <!--Languages-->
-        <!-- <link rel="stylesheet" type="text/css" href="codemirror.css">
-        <script type="text/javascript" src="https://codemirror.net/lib/codemirror.js"></script>
-        <script type="text/javascript" src="https://codemirror.net/mode/xml/xml.js"></script>
-        <script type="text/javascript" src="https://codemirror.net/mode/css/css.js"></script>
-        <script type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script> -->
 
-        <!-- ace -->
-        <link rel="stylesheet" href="Editor files/editor-styles.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link> -->
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=====CSS=====-->
+    <link rel="icon" href='logo.jpg' type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <!--======box-icons======-->
+    <script src="https://kit.fontawesome.com/0175b47e25.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Online Code Editor-Wanda</title>
-    </head>
-    <body>
-        <!-- <header>
-            <h1 class="project_name">{ONLINE CODE EDITOR}</h1>
-        </header> -->
-        <section class="header">
+    <!-- ace -->
+    <link rel="stylesheet" href="Editor files/editor-styles.css">
 
-                <!-- <div> -->
-                    <a href="index.html"><img src="logo.jpg" class="logo" height="60px" width="60px"></a>
-                    <span class="team_name">Wanda</span>
-                    <span class="team_description">~Coding made easy</span>
-                    <span class="project_name">{ONLINE CODE EDITOR}</span>
-                    
-                    <!-- <a href="#" class="dark-mode_icon" id="icon"><i class='bx bxs-moon'></i> </a> -->
-                    <img src="mooon.jpg" id="icon">
-                
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 
-            <!-- </div> -->
-        </section>
-        <div class="actions">
-             <div class="leftheadersection">
-                <!-- Enter project name : <input type="text" id="projectname" />
-                
-                <button class="save-btn" onclick="saveProject()"><i class='bx bxs-save'></i> Save </button> -->
-                "Talk is cheap! Show me the Code."
-            </div>
-            <!-- </div> -->
-             <!-- <button id="run-btn"><i class='bx bx-play'></i>Run</button>
-             
-             <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i> Download</button> -->
+    <title>Online Code Editor-Wanda</title>
+</head>
 
-             <!-- <button id="live-btn"><i class='bx bx-play-circle'></i>LIVE</button> -->
-             
-             <!-- <button id="layout-btn"><i class='bx bxs-layout' ></i>Change Layout</button> -->
-             
-              <div class="rightheadersection">
-                <button id="run-btn" class="editor_btn"><i class='bx bx-play'></i>Run</button>
-             
-                <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i> Download</button>
-                <!-- <select onchange= "populateEditor()" id="projects"></select> -->
-              </div>
-            
+<body>
+    <section class="header">
+
+        <a href="index.html"><img src="logo.jpg" class="logo" height="60px" width="60px"></a>
+        <span class="team_name">Wanda</span>
+        <span class="team_description">~Coding made easy</span>
+        <span class="project_name">{ONLINE CODE EDITOR}</span>
+
+        <img src="mooon.jpg" id="icon">
+
+    </section>
+    <div class="actions">
+        <div class="leftheadersection">
+            "Talk is cheap! Show me the Code."
         </div>
-        <div class="editor">
-            <div class="code">
-               <div class="html-code" id="htmlCode"><span class="details"></span><br></div> 
-               
 
-                <div class="css-code" id="cssCode"><span class="details"></span><br></div> 
-                
+        <div class="rightheadersection">
+            <button id="run-btn" class="editor_btn"><i class='bx bx-play'></i>Run</button>
 
-                <div class="js-code" id="jsCode"><span class="details"></span><br></div>
-            </div></div>
-            
-
-            
-            <div class="demo">RESULT WINDOW:</div>
-
-            <div class="preview">
-                <iframe id="preview-window"></iframe>
-            </div>
-            
+            <button id="download-btn" onclick="download()"><i class='bx bxs-download'></i> Download</button>
         </div>
-        
 
-        <script src="https://kit.fontawesome.com/746da861bd.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-
-        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script> -->
-
-        <!-- Required ace libraries -->
-        <script src="Editor files/src-min/ace.js"></script>
-        <script src="Editor files/src-min/mode-html.js"></script>
-        <script src="Editor files/src-min/mode-css.js"></script>
-        <script src="Editor files/src-min/mode-javascript.js"></script>
-        <script src="Editor files/src-min/ext-language_tools.js"></script>
-        <script src="Editor files/editor.js"></script>
-        
-<!--     <script src="final_1.js"></script> -->
-        
-
-    </body>
-    <div class="footer">
-        <a class="footer-links" href="about-us.html">About us</a>
-        <a class="footer-links" href="contact.html">Contact us</a>
-        <a class="footer-links github-logo" href="https://github.com/Susmita2105/Wanda-Code-Editor"><i class="fab fa-github"></i></a>
-        <p class="copyright">© Web Waltzers 2022</p>
     </div>
-</html> 
+    <div class="editor">
+        <div class="code">
+            <div class="html-code"><span class="lang-text">HTML</span>
+                <div class="inner-code" id="htmlCode"></div>
+            </div>
+
+
+            <div class="css-code"><span class="lang-text">CSS</span>
+                <div class="inner-code" id="cssCode"></div>
+            </div>
+
+
+            <div class="js-code"><span class="lang-text">JS</span>
+                <div class="inner-code" id="jsCode"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="demo">RESULT WINDOW</div>
+
+    <div class="preview">
+        <iframe id="preview-window"></iframe>
+    </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/746da861bd.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+    <!-- Required ace libraries -->
+    <script src="Editor files/src-min/ace.js"></script>
+    <script src="Editor files/src-min/mode-html.js"></script>
+    <script src="Editor files/src-min/mode-css.js"></script>
+    <script src="Editor files/src-min/mode-javascript.js"></script>
+    <script src="Editor files/src-min/ext-language_tools.js"></script>
+    <script src="Editor files/editor.js"></script>
+
+
+</body>
+<div class="footer">
+    <a class="footer-links" href="about-us.html">About us</a>
+    <a class="footer-links" href="contact.html">Contact us</a>
+    <a class="footer-links github-logo" href="https://github.com/Susmita2105/Wanda-Code-Editor"><i
+            class="fab fa-github"></i></a>
+    <p class="copyright">© Web Waltzers 2022</p>
+</div>
+
+</html>
